@@ -35,7 +35,7 @@ function App() {
   }, []);
   
   useEffect(() => {
-    const filteredPlaces = places.filter((place) => place.rating > rating)
+    const filteredPlaces = places?.filter((place) => place.rating > rating)
     setFilteredPlaces(filteredPlaces)
   }, [rating, places])
 
